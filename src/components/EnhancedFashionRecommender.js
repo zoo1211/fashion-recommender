@@ -200,9 +200,7 @@ const EnhancedFashionRecommender = () => {
                         onClick={() => toggleFavorite(item.id)}
                       >
                         <Heart
-                          className={w-5 h-5 ${
-                            favorites.includes(item.id) ? 'fill-red-500 text-red-500' : ''
-                          }}
+                        className={`w-5 h-5 ${favorites.includes(item.id) ? 'fill-red-500 text-red-500' : ''}`}
                         />
                       </Button>
                       <Button
